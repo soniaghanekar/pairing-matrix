@@ -10,7 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110910075416) do
+ActiveRecord::Schema.define(:version => 20110910105831) do
+
+  create_table "employee_details", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pairing_details", :force => true do |t|
+    t.integer  "pair1_id"
+    t.integer  "pair2_id"
+    t.integer  "number_of_times_paired"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pairing_martrixes", :force => true do |t|
     t.integer  "matrix_id"
