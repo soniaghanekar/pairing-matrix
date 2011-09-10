@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PairingMemberTest < ActiveSupport::TestCase
+class PairingDetailsTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

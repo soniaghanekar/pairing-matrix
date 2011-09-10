@@ -1,9 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
-  matrix_id: 1
-  pairing_members: MyString
+  name: MyString
 
 two:
-  matrix_id: 1
-  pairing_members: MyString
+  name: MyString

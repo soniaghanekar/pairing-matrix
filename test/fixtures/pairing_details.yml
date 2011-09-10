@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  pair1_id: 1
+  pair2_id: 1
+  number_of_times_paired: 1
+
+two:
+  pair1_id: 1
+  pair2_id: 1
+  number_of_times_paired: 1
