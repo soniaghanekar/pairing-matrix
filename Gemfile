@@ -5,7 +5,7 @@ gem 'mysql2'
 
 gem 'execjs'
 gem 'therubyracer'
-
+gem 'tabs_on_rails','=2.0.2'
 gem 'json'
 
 # Gems used only for assets and not required

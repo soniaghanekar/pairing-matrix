@@ -1,4 +1,8 @@
 PairingMatrix::Application.routes.draw do
+  resources :pairing_members
+
+  resources :pairing_martrixes
+
   get "home/index"
 
   # The priority is based upon order of creation:

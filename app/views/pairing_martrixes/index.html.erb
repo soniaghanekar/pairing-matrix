@@ -1,0 +1,25 @@
+<h1>Listing pairing_martrixes</h1>
+
+<table>
+  <tr>
+    <th>Matrix</th>
+    <th>Project name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @pairing_martrixes.each do |pairing_martrix| %>
+  <tr>
+    <td><%= pairing_martrix.matrix_id %></td>
+    <td><%= pairing_martrix.project_name %></td>
+    <td><%= link_to 'Show', pairing_martrix %></td>
+    <td><%= link_to 'Edit', edit_pairing_martrix_path(pairing_martrix) %></td>
+    <td><%= link_to 'Destroy', pairing_martrix, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pairing martrix', new_pairing_martrix_path %>
