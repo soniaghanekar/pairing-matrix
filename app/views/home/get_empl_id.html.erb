@@ -1,14 +1,24 @@
 
-<div class="left-area">
+<!--<div class="left-area">-->
 
   <%= form_tag('/get', :multipart => true) %>
 
-  <p><label>Employee ID1</label> :
-    <%= text_field_tag 'pair1_id' %></p>
-  </br>
-  <p><label>Employee ID2</label> :
-    <%= text_field_tag 'pair2_id' %></p>
-  <%= submit_tag "Find" %>
+  <!--<p><label>Employee ID1</label> :-->
+  <!--  <%= text_field_tag 'pair1_id' %></p>-->
+  <!--</br>-->
+  <!--<p><label>Employee ID2</label> :-->
+  <!--  <%= text_field_tag 'pair2_id' %></p>-->
+
+<!--</div>-->
+
+<label>Name1
+<%=select("emp_details", "id", EmployeeDetails.all.collect {|p| [ p.name] })%>
+</label>
+<%#{emp_details.id}%>
+</br> </br></br>
+<label>Name2
+<%=select("emp_details1", "name", EmployeeDetails.all.collect {|p| [p.name] })%>
+</label>
+<%= submit_tag "Find" %>
   <%= form_tag %>                                                
-   <%=@count%>
-</div>
+

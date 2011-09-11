@@ -1,9 +1,9 @@
 class PairingDetailsController < ApplicationController
 
   def get_count
-    id1=get_id_from_employee_details(params[:pair1_id])
-    id2=get_id_from_employee_details(params[:pair2_id])
-    @count=PairingDetails.find_by_pair1_id_and_pair2_id(id1,id2).number_of_times_paired
+    emp_id1=get_id_from_employee_details(params[:emp_details.id])
+    #emp_id2=get_id_from_employee_details(params[:employee_details.name2])
+    @count=PairingDetails.find_by_pair1_id_and_pair2_id(emp_id1,2).number_of_times_paired
 
   end
 
