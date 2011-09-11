@@ -1,12 +1,23 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+#Gems required for all groups
+gem 'rails', '=3.1.0'
 gem 'mysql2'
 
 gem 'execjs'
 gem 'therubyracer'
-gem 'tabs_on_rails','=2.0.2'
-gem 'json'
+gem 'cucumber'
+gem 'cucumber-rails'
+gem 'database_cleaner'
+
+group :test do
+  gem 'factory_girl'
+
+  gem 'pickle'
+  gem "rspec"
+  gem "rspec-rails"
+  gem 'capybara-webkit'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

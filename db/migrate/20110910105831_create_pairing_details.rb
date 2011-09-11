@@ -7,5 +7,8 @@ class CreatePairingDetails < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :pairing_details, :pair1_id
+    add_index :pairing_details, :pair2_id
+    add_index :pairing_details, [:pair1_id, :pair2_id], :unique => true
   end
 end

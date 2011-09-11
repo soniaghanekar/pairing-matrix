@@ -1,4 +1,4 @@
-
+<%=render :partial => 'home/index'%>
 <!--<div class="left-area">-->
 
   <%= form_tag('/get', :multipart => true) %>
@@ -11,14 +11,16 @@
 
 <!--</div>-->
 
+<% @emp=EmployeeDetail.all %>
 <label>Name1
-<%=select("emp_details", "id", EmployeeDetails.all.collect {|p| [ p.name] })%>
+<%=select_tag "pair1", options_from_collection_for_select(@emp, "id","name")%>
 </label>
-<%#{emp_details.id}%>
 </br> </br></br>
 <label>Name2
-<%=select("emp_details1", "name", EmployeeDetails.all.collect {|p| [p.name] })%>
+<%=select_tag "pair2", options_from_collection_for_select(@emp, "id","name")%>
 </label>
+
+
 <%= submit_tag "Find" %>
   <%= form_tag %>                                                
 

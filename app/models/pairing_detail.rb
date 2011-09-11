@@ -1,4 +1,8 @@
-class PairingDetails < ActiveRecord::Base
+class PairingDetail < ActiveRecord::Base
+
+  belongs_to :pair1, :class_name => 'Employee_Details'
+  belongs_to :pair2, :class_name => 'Employee_Details'
+
   validates_presence_of :pair1_id, :pair2_id, :number_of_times_paired,
   :message=>'mandatory'
 
