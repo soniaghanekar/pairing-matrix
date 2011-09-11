@@ -57,6 +57,7 @@ PairingMatrix::Application.routes.draw do
    match '/view', :to => 'home#get_empl_id', :as => :view
    match '/get', :to => 'pairing_details#get_count'
    match '/get/count', :to => 'pairing_details#get_count'
+   match '/view_table', :to => 'pairing_details#generate_data_in_tabular_form'
 
 
   # See how all your routes lay out with "rake routes"
