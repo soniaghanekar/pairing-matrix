@@ -1,26 +1,28 @@
+<h1 align="center">Edit Record</h1>
+
 <%=render :partial => 'home/index'%>
-<!--<div class="left-area">-->
-
-  <%= form_tag('/get', :multipart => true) %>
-
-  <!--<p><label>Employee ID1</label> :-->
-  <!--  <%= text_field_tag 'pair1_id' %></p>-->
-  <!--</br>-->
-  <!--<p><label>Employee ID2</label> :-->
-  <!--  <%= text_field_tag 'pair2_id' %></p>-->
-
-<!--</div>-->
-
-<% @emp=EmployeeDetail.all %>
-<label>Name1
-<%=select_tag "pair1", options_from_collection_for_select(@emp, "id","name")%>
-</label>
-</br> </br></br>
-<label>Name2
-<%=select_tag "pair2", options_from_collection_for_select(@emp, "id","name")%>
-</label>
 
 
-<%= submit_tag "Find" %>
-  <%= form_tag %>                                                
+<%= form_tag('/edit/record', :multipart => true) %>
+    </br></br>
+
+    <% @emp=EmployeeDetail.all %>
+    <label>Name1
+        <%=select_tag "pair1", options_from_collection_for_select(@emp, "id","name")%>
+    </label>
+
+    </br> </br></br>
+
+    <label>Name2
+        <%=select_tag "pair2", options_from_collection_for_select(@emp, "id","name")%>
+    </label>
+
+    </br></br>
+    <p><label>Enter new count :</label>
+
+    <%= text_field_tag 'count' %>
+
+    <%= submit_tag "Save" %>
+
+<%= form_tag %>                                                
 

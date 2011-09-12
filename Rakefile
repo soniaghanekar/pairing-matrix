@@ -14,6 +14,12 @@ PairingMatrix::Application.load_tasks
 namespace :tests do
 
   begin
+    task :set_env do
+      #require 'ci/reporter/rake/rspec'
+      RAILS_ENV = ENV['RAILS_ENV'] = 'test'
+    end
+
+
     desc "Run all tests"
     task :tests => ['tests:unit', 'tests:integration', :cucumber]
 

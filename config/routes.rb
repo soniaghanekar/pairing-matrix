@@ -54,10 +54,10 @@ PairingMatrix::Application.routes.draw do
   # just remember to delete public/index.html.
   match '/', :to => 'home#index'
    #root '/', :to => 'home#index'
-   match '/view', :to => 'home#get_empl_id', :as => :view
-   match '/get', :to => 'pairing_details#get_count'
-   match '/get/count', :to => 'pairing_details#get_count'
-   match '/view_table', :to => 'pairing_details#generate_data_in_tabular_form'
+   match '/edit', :to => 'home#get_empl_id', :as => :edit
+   match '/edit/record', :to => 'pairing_detail#edit_record'
+   match '/get/count', :to => 'pairing_detail#get_count'
+   match '/view_table', :to => 'pairing_detail#generate_data_in_tabular_form', :as =>:view_table
 
 
   # See how all your routes lay out with "rake routes"

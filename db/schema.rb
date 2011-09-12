@@ -26,16 +26,13 @@ ActiveRecord::Schema.define(:version => 20110910105831) do
     t.datetime "updated_at"
   end
 
+  add_index "pairing_details", ["pair1_id", "pair2_id"], :name => "index_pairing_details_on_pair1_id_and_pair2_id", :unique => true
+  add_index "pairing_details", ["pair1_id"], :name => "index_pairing_details_on_pair1_id"
+  add_index "pairing_details", ["pair2_id"], :name => "index_pairing_details_on_pair2_id"
+
   create_table "pairing_martrixes", :force => true do |t|
     t.integer  "matrix_id"
     t.string   "project_name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "pairing_members", :force => true do |t|
-    t.integer  "matrix_id"
-    t.string   "pairing_members"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

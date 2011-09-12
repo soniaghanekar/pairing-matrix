@@ -176,8 +176,9 @@ DEPENDENCIES
   mysql2
   pickle
   rails (= 3.1.0)
+  rake
   rspec
-  rspec-rails
+  rspec-rails (~> 2.4)
   sass-rails (~> 3.1.0)
   therubyracer
   uglifier
