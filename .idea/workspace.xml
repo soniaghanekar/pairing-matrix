@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12880337-b1c3-4615-9266-46ccd177715a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/pairing_detail_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/pairing_detail/edit_record.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/pairing_detail_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/pairing_detail_helper_test.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/pairing_details_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/pairing_details_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pairing_details/get_count.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/functional/pairing_details_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/unit/helpers/pairing_details_helper_test.rb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/pairing_details/generate_data_in_tabular_form.erb" afterPath="$PROJECT_DIR$/app/views/pairing_detail/generate_data_in_tabular_form.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/pairing_matrix.iml" afterPath="$PROJECT_DIR$/.idea/pairing_matrix.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/employee_detail.rb" afterPath="$PROJECT_DIR$/app/models/employee_detail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/pairing_detail.rb" afterPath="$PROJECT_DIR$/app/models/pairing_detail.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/_index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/_index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/get_empl_id.html.erb" afterPath="$PROJECT_DIR$/app/views/home/get_empl_id.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110910105831_create_pairing_details.rb" afterPath="$PROJECT_DIR$/db/migrate/20110910105831_create_pairing_details.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/step_definitions/view_navigation.rb" afterPath="$PROJECT_DIR$/features/step_definitions/view_navigation.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/features/support/view_navigation.feature" afterPath="$PROJECT_DIR$/features/support/view_navigation.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
     </list>
     <ignored path="pairing_matrix.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,15 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit_record.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pairing_detail/edit_record.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="44" selection-start="19" selection-end="44" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,19 +65,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pairing_detail_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pairing_detail_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="50" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+            <state line="24" column="14" selection-start="903" selection-end="903" vertical-scroll-proportion="0.82833785">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="4" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pairing_detail_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="28" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="9" selection-start="198" selection-end="198" vertical-scroll-proportion="0.6631579">
+            <state line="17" column="15" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,15 +105,6 @@
         <entry file="file://$PROJECT_DIR$/features/step_definitions/web_steps.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="41" column="24" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common_steps.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/step_definitions/common_steps.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,7 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/pairing_detail.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20110910105831_create_pairing_details.rb" />
         <option value="$PROJECT_DIR$/features/step_definitions/view_navigation.rb" />
         <option value="$PROJECT_DIR$/test/functional/pairing_details_controller_test.rb" />
@@ -164,12 +142,13 @@
         <option value="$PROJECT_DIR$/app/views/home/_index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pairing_details/edit_record.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/pairing_details_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/get_empl_id.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/features/support/view_navigation.feature" />
-        <option value="$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb" />
       </list>
     </option>
   </component>
@@ -975,11 +954,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/boot.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.8.7-p330@rampup/gems/bundler-1.0.18/lib/bundler/spec_set.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="0" selection-start="1883" selection-end="1883" vertical-scroll-proportion="0.0" />
@@ -995,13 +969,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="0" selection-end="49" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1067,16 +1034,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="50" selection-start="455" selection-end="455" vertical-scroll-proportion="0.0">
+        <state line="17" column="15" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="9" selection-start="198" selection-end="198" vertical-scroll-proportion="0.6631579">
+        <state line="20" column="4" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pairing_detail_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="28" selection-start="885" selection-end="885" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/pairing_detail_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="903" selection-end="903" vertical-scroll-proportion="0.82833785">
           <folding />
         </state>
       </provider>

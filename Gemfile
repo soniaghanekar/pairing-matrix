@@ -10,13 +10,14 @@ gem 'cucumber'
 gem 'cucumber-rails'
 gem 'database_cleaner'
 gem 'rake'
+gem "rspec-rails", "~> 2.4"
 
 group :test do
   gem 'factory_girl'
 
   gem 'pickle'
   gem "rspec"
-  gem "rspec-rails", "~> 2.4"
+
   gem 'capybara-webkit'
 end
 
