@@ -13,4 +13,5 @@ class PairingDetailControllerTest < ActionController::TestCase
 
   end
 
+
 end
