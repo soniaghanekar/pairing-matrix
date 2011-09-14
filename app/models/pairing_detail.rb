@@ -11,5 +11,22 @@ class PairingDetail < ActiveRecord::Base
   validates_numericality_of :pair1_id, :pair2_id, :number_of_times_paired,
   :message=>'should be a number'
 
+  def self.get_total_count(pair_counts)
+    pair_counts.each_key{|id|
+
+      pair_counts[id].each_key{|pair|
+            if(id!=pair)
+              count1=pair_counts[id][pair]
+              count2=pair_counts[pair][id]
+              pair_counts[id][pair]=count1+count2
+              pair_counts[pair][id]=count1+count2
+            end
+        }
+    }
+
+
+  end
+
+
 
 end

@@ -14,7 +14,6 @@ gem "rspec-rails", "~> 2.4"
 
 group :test do
   gem 'factory_girl'
-
   gem 'pickle'
   gem "rspec"
 
@@ -30,13 +29,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug'
 

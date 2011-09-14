@@ -7,7 +7,7 @@ Feature: Check navigation of various tabs
     Given I am on /
     Then I should see "Welcome"
 
-  @wip
+
   Scenario: User can see the matrix table page
     Given I am on /
     When I follow "Open Table"
