@@ -4,16 +4,18 @@ require "pairing_detail"
 describe PairingDetailController do
   before(:each) do
     @counts=Hash.new
+
+    @pair1=EmployeeDetail.new(:id=>1)
+    @pair2=EmployeeDetail.new(:id=>2)
   end
 
   describe "editing record"  do
 
     it "should be able to edit pairing count" do
-      PairingDetail.should_receive(:delete_all).with(:pair1_id=>"3",:pair2_id=>"4")
-      PairingDetail.should_receive(:delete_all).with(:pair1_id=>"4",:pair2_id=>"3")
-      PairingDetail.should_receive(:create).with(:pair1_id=>"3",:pair2_id=>"4",:number_of_times_paired=>"6")
-      get :edit_record, :pair1=>"3", :pair2=>"4", :count=>"6"
+      PairingDetail.should_receive(:edit_count).with(@pair1.id,@pair2.id,"3")
+      get :edit_record, :pair1=>@pair1.id, :pair2=>@pair2.id, :count=>"3"
       response.should be_success
+      flash[:notice].should=="Successfully edited the pairing count"
     end
 
   end

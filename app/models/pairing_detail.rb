@@ -1,15 +1,18 @@
 class PairingDetail < ActiveRecord::Base
 
-  belongs_to :pair1, :class_name => 'Employee_Detail'
-  belongs_to :pair2, :class_name => 'Employee_Detail'
+  belongs_to :pair1, :class_name => 'EmployeeDetail'
+  belongs_to :pair2, :class_name => 'EmployeeDetail'
 
-  #validates :pair1_id, :presence => true, :uniqueness => {:scope => :pair2_id}
-  #
-  #validates_presence_of :pair1_id, :pair2_id, :number_of_times_paired,
-  #:message=>'mandatory'
-  #
-  #validates_numericality_of :pair1_id, :pair2_id, :number_of_times_paired,
-  #:message=>'should be a number'
+  def self.edit_count(pair1,pair2,count)
+      pair_detail=EmployeeDetail.find(pair1).pairing_detail.find_by_pair2_id(pair2)
+      pair_detail.number_of_times_paired=count
+      pair_inverse=EmployeeDetail.find(pair2).pairing_detail.find_by_pair2_id(pair1)
+      pair_inverse.number_of_times_paired=0
+      pair_detail.save!
+      pair_inverse.save!
+  end
+
+
 
   def self.get_total_count(pair_counts)
     pair_counts.each_key{|id|
