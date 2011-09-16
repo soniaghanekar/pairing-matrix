@@ -16,6 +16,7 @@ describe PairingDetailController do
       get :edit_record, :pair1=>@pair1.id, :pair2=>@pair2.id, :count=>"3"
       response.should be_success
       flash[:notice].should=="Successfully edited the pairing count"
+      response.should render_template('home/index')
     end
 
   end
@@ -24,7 +25,6 @@ describe PairingDetailController do
 
     it "should generate a hash with all pairing counts" do
       PairingDetail.should_receive(:generate_counts_in_hash).and_return(@counts)
-      PairingDetail.should_receive(:get_total_count).with(@counts)
       get :generate_data_in_tabular_form
       response.should be_success
     end

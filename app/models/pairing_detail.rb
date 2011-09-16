@@ -13,23 +13,6 @@ class PairingDetail < ActiveRecord::Base
   end
 
 
-
-  def self.get_total_count(pair_counts)
-    pair_counts.each_key{|id|
-
-      pair_counts[id].each_key{|pair|
-            if(id!=pair)
-              count1=pair_counts[id][pair]
-              count2=pair_counts[pair][id]
-              pair_counts[id][pair]=count1+count2
-              pair_counts[pair][id]=count1+count2
-            end
-        }
-      puts pair_counts[2][1]
-    }
-
-  end
-
   def self.generate_counts_in_hash
     count=Hash.new
        EmployeeDetail.all.each { |employee|
