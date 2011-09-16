@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 describe PairingDetail do
 
   before(:each) do
